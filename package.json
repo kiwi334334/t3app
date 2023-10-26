@@ -13,10 +13,13 @@
   },
   "dependencies": {
     "@prisma/client": "^5.1.1",
+    "@reduxjs/toolkit": "^1.9.7",
     "@t3-oss/env-nextjs": "^0.7.0",
     "next": "^13.5.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hanger": "^2.4.5",
+    "use-between": "^1.3.5",
     "zod": "^3.22.4"
   },
   "devDependencies": {
