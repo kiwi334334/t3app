@@ -2,8 +2,11 @@ import NavBar from "~/components/navbar";
 
 export default function Aboutpage() {
     return (
-        <div>
+        <div className="w-screen h-screen">
             <NavBar />
+            <div>
+
+            </div>
         </div>
     )
 }
