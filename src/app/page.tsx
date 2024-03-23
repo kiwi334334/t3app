@@ -31,7 +31,7 @@ export default function HomePage() {
   return (
     <div className="w-screen h-screen">
       <NavBar />
-      <div className="bg-stone-300 w-[30%]  right-0 absolute h-[100%]">
+      <div className="bg-blue-300 w-[30%]  right-0 absolute h-[100%]">
         <div className="h-[100%] w-[100%] overflow-scroll scrollbar-hide  p-10">
           <h1>SHELVES</h1>
           <Iteminstore type={"Shelf"} title={"NIKEA IShelves Plus"} price={175} imgURL={"https://static.vecteezy.com/system/resources/previews/010/135/574/original/collection-of-wooden-shelves-on-an-isolated-white-background-objects-with-clipping-paths-for-design-work-png.png"} /><br />
@@ -39,7 +39,7 @@ export default function HomePage() {
         </div><br />
       </div>
       <div className="fixed right-[30%] h-full w-[40%] overflow-scroll">
-        <div className="overflow-scroll h-full w-full bg-stone-300 scrollbar-hide p-10">
+        <div className="overflow-scroll h-full w-full bg-blue-300 scrollbar-hide p-10">
           <h1>COUCHES</h1>
           <Iteminstore type={"Couch"} title={"NIKEA Auto Fold 300"} price={400} imgURL={"https://static.vecteezy.com/system/resources/previews/022/219/389/original/white-sofa-isolated-on-a-transparent-background-png.png"} /><br />
           <Iteminstore type={"Couch"} title={"NIKEA Auto Fold"} price={300} imgURL={"/couch2.png"} /><br />
@@ -48,8 +48,8 @@ export default function HomePage() {
           <Iteminstore type={"Table"} title={"NIKEA Round Table"} price={150} imgURL={"/rtable.png"} /><br />
         </div>
       </div>
-      <div className="w-[30%] bg-slate-400 h-screen">
-        <h1 className="text-4xl bg-slate-400 border-b-4 border-black">CART</h1>
+      <div className="w-[30%] bg-blue-400 h-screen border-solid border-teal-800 border-[4px]">
+        <h1 className="text-4xl bg-blue-400 border-b-4 border-black">CART</h1>
         {cart.map((item, i) => {
           return (
             <h1 key={i}>— {item}:{allamounts[i]}</h1>
