@@ -77,10 +77,10 @@ function Iteminstore({ imgURL, price, title, type }: itemtypes) {
         <div className="flex justify-between">
           <button onClick={() => { setamount(amount + 1) }}>+1</button>
           <h1>{amount}</h1>
-          <button onClick={() => { setamount(amount - 1) }}>-1</button>
+          <button onClick={() => { setamount(amount - 1); if (amount <= 0){setamount(0)} }}>-1</button>
         </div>
         <p>To Add To Cart Click The Button Bellow<br /> PRICE:${price * amount}</p>
-        <button className="border-3 border-solid border-black" id="1btn" onClick={() => { addtocart([...cartcopy, title]); addtocost(cost + (price * amount)); addtoallamounts([...copyallamounts, `${amount}`]) }}>{title}</button>
+        <button className="border-black border-solid border-[2px] w-full rounded-b-md" id="1btn" onClick={() => { addtocart([...cartcopy, title]); addtocost(cost + (price * amount)); addtoallamounts([...copyallamounts, `${amount}`]) }}>Add {amount} {title}s to cart</button>
       </div>
     </>
   );

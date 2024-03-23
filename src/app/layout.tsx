@@ -1,10 +1,4 @@
 import "~/styles/globals.css";
-import { Inter } from "next/font/google";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
 
 export const metadata = {
   title: "NOT IKEA",
@@ -19,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans overflow-hidden ${inter.variable}`}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

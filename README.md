@@ -2,6 +2,6 @@
 My Name Is Elias and i am a in progress web developer.
 
 ### List Of Projects
-1. 
-2. 
+1. This... Duh
+2. A work in progress blog(NOT REAL)
 3. 
